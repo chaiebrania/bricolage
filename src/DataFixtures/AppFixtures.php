@@ -52,7 +52,7 @@ class AppFixtures extends Fixture
             $coverImage = $faker->imageUrl(1000,350);
             $introduction = $faker->sentence();
             $content    = '<p>' . join('</p><p>', $faker->paragraphs(3)) . '</p>';
-
+ 
             $user = $users[mt_rand(0, count($users) - 1)];
 
             $ad->setTitle($title)
